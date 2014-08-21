@@ -1,5 +1,5 @@
 
-public class Cliente {
+public class Paciente {
  private String nome;
  private int cpf;
  private String sexo;

@@ -12,5 +12,13 @@ public class Consulta {
     	
     	
     }
+
+	public String getData() {
+	return data;
+	}
+
+	public int getCodigo() {
+		return codConsulta;
+	}
   
 }

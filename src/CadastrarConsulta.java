@@ -3,6 +3,11 @@ import java.util.ArrayList;
 
 public class CadastrarConsulta {
 			
+  static ArrayList<Consulta> consultList=new ArrayList<Consulta>();
+	
+	public CadastrarConsulta(ArrayList<Consulta> consultaObj){
+		consultList=consultaObj;
+	}
 	
  public static void cadastrarConsulta(){
     
@@ -10,11 +15,7 @@ public class CadastrarConsulta {
 	 
 	 Consulta consulta=new Consulta();
 
-	 ArrayList<Consulta> consultList=new ArrayList<Consulta>();
-		
-	 
 	    //Cadastrar Consulta
-	    System.out.println("Cadastrar Consulta");
 	    
 	    entrada=new Scanner(System.in);
 	    System.out.println("Data da Consulta");
@@ -22,14 +23,13 @@ public class CadastrarConsulta {
 		
 	    entrada=new Scanner(System.in);
 	    
-	    System.out.println("Codigoo da Consulta");
+	    System.out.println("Codigo da Consulta");
 	    int codConsulta= entrada.nextInt();
 
 	    consulta.addConsulta(data, codConsulta);
 	    
 	    consultList.add(consulta);
-	 
-	 
+	 	 
  }
  
  

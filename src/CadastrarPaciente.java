@@ -2,11 +2,11 @@ import java.util.Scanner;
 
 import java.util.ArrayList;
 import java.util.ArrayList;
-public class CadastrarCliente {
+public class CadastrarPaciente {
 	
-	static ArrayList<Cliente> clienteList = new ArrayList<Cliente>();
+	static ArrayList<Paciente> clienteList = new ArrayList<Paciente>();
 	
-	public CadastrarCliente(ArrayList<Cliente> cadastroCliente){
+	public CadastrarPaciente(ArrayList<Paciente> cadastroCliente){
 		clienteList=cadastroCliente;
 		
 	}
@@ -29,7 +29,7 @@ public class CadastrarCliente {
     		System.out.println("Sexo do Paciente:");
     		String sexo = entrada.nextLine();
    
-    		Cliente cliente = new Cliente();
+    		Paciente cliente = new Paciente();
     		cliente.addCliente(nome, cpf, sexo);
     		
     		Historico historico=new Historico();
